@@ -11,7 +11,7 @@ class VmachineService {
         }
     }
     addCredit(amount) {
-        ProxyState.money += amount
+        ProxyState.dollar += amount
     }
 }
-export const vendingService = new VendingService()
+export const vmachineService = new VmachineService()

@@ -7,7 +7,7 @@ class AppState extends EventEmitter {
   /** @type {Value[]} */
   snacks = []
 
-  source = 0
+  dollar = 0
 
   snacks = [new Snack("Lay's", 3, 5, "url(./assets/img/Red b.jpg)")]
 }
