@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Vending Machine</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class=" text-center bg-primary py-2 sticky-top h-100">
+            <h1>Vending Machine</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-5 text-center py-5 my-5 ">
+                    <div class="bg-info">
+                        <div class="bg-dark">
+                            <h1 class="bg-primary text-center">Snacks</h1><br>
+                            <button class="bg-warning text-center text-dark mb-3 p-2">Lays <span id="lays"> 0
+                                </span></button>
+                            <button class="bg-warning text-center text-dark mb-3 p-2">Reese<span id="reese"> 0
+                                </span></button>
+                            <button class="bg-warning text-center text-dark mb-3 p-2">Twix<span id="twix"> 0
+                                </span></button>
+                            <button class="bg-warning text-center text-dark mb-3 p-2">Doritos <span id="doritos"> 0
+                                </span></button>
+                            <button class="bg-warning text-center text-dark mb-3 p-2">Cookies <span id="cookies"> 0
+                                </span></button>
+                        </div>
+                        <button class="bg-info py-2" onClick="purchase()"> Purchase </button>
+                        <P class="bg-success text-center text-light cheese"> Credit :<span id="credit"> 0 </span></P>
+                    </div>
+                    <P class="bg-danger py-2">Total price</P>
+                </div>
+
+                <div class=" col-5 text-center p-2 m-2">
+                    <img class="img-fluid" src="./assets/img/vending.jpg" alt="">
+                </div>
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="./app/Models/app.js"></script>
+</body>
+
+</html>
