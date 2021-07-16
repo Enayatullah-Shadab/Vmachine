@@ -7,21 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <title>Vending Machine</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <header class=" text-center bg-primary py-2 sticky-top h-100">
-            <h1>Vending Machine</h1>
+        <header class="bg-info text-light w-100 sticky-top py-3 d-flex column">
+            <h1 class=" text-center"> Vending Machine</h1>
+            <h1 class=" text-left"><span class="iconify" data-icon="mdi:basket-outline" data-inline="true"></span></h1>
         </header>
-        <main>
+
+        <main class="container-fluid d-flex flex-row">
+            <div class="row p-5 ml-5 mt-4">
+                <div class="col-6 text-dark m-5 p-5">
+                    <h3>Source:<span id="source">0</span>
+                    </h3>
+                </div>
+                <div class="col-6 text-dark m-5 p-5">
+                    <h3>AddCredit</h3>
+                    <button id="quarter">Add 25c</button>
+                    <button id="dolar"> Add $1</button>
+                </div>
+
+            </div>
             <div class="row">
-                <div class="col-5 text-center py-5 my-5 ">
+                <div class=" col-12 text-center pr-5 mt-5 pt-5">
+                    <img class="img-fluid" src="./assets/img/Red b.jpg" width="180" height="300"
+                        alt="what for picture to load">
+                    <h5>Price: <span> 0 </span> </h5>
+                    <h5>Quantity: <span> 0 </span> </h5>
+                    <h5>Total: <span> 0 </span> </h5>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class=" col-5 text-center p-2 m-2">
+                    <img class="img-fluid" src="./assets/img/vending.jpg" alt="">
+                </div> -->
+    <!-- <div class="col-5 text-center py-5 my-5 ">
                     <div class="bg-info">
                         <div class="bg-dark">
                             <h1 class="bg-primary text-center">Snacks</h1><br>
+
                             <button class="bg-warning text-center text-dark mb-3 p-2">Lays <span id="lays"> 0
                                 </span></button>
                             <button class="bg-warning text-center text-dark mb-3 p-2">Reese<span id="reese"> 0
@@ -37,17 +79,15 @@
                         <P class="bg-success text-center text-light cheese"> Credit :<span id="credit"> 0 </span></P>
                     </div>
                     <P class="bg-danger py-2">Total price</P>
-                </div>
+                </div> -->
 
-                <div class=" col-5 text-center p-2 m-2">
-                    <img class="img-fluid" src="./assets/img/vending.jpg" alt="">
-                </div>
 
-            </div>
-        </main>
-        <footer>
 
-        </footer>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
     </div>
     <script src="./app/Models/app.js"></script>
 </body>
