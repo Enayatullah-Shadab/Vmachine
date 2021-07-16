@@ -1,3 +1,4 @@
+import { ProxyState } from "../AppState.js"
 class VmachineService {
     buy(item) {
         let value = ProxyState.snacks.find(s => s.name == item)
@@ -9,10 +10,8 @@ class VmachineService {
             window.alert("insufficient balance")
         }
     }
-    addMoney(amount) {
+    addCredit(amount) {
         ProxyState.money += amount
     }
-
-
 }
 export const vendingService = new VendingService()

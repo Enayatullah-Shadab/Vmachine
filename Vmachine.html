@@ -27,12 +27,15 @@
                 </div>
                 <div class="col-6 text-dark m-5 p-5">
                     <h3>AddCredit</h3>
-                    <button id="quarter">Add 25c</button>
-                    <button id="dolar"> Add $1</button>
+                    <button onclick="app.vendingController.addCredit(1)">dollar</button>
+                    <button onclick="app.vendingController.addCredit(.25)">quarter</button>
                 </div>
 
             </div>
             <div class="row">
+                <div class="col " id="snacks">
+
+                </div>
                 <div class=" col text-center pr-5 mt-5 pt-5">
                     <img class="img-fluid" src="./assets/img/Red b.jpg" width="180" height="300"
                         alt="what for picture to load">
@@ -41,23 +44,9 @@
                     <p>Qty: <span id="qnt"> 0 </span> </p>
                     <p>Total: <span id="total"> 0 </span> </p>
                 </div>
-                <div class="col " id="snacks">
 
-                </div>
             </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- <div class=" col-5 text-center p-2 m-2">
@@ -84,13 +73,10 @@
                     </div>
                     <P class="bg-danger py-2">Total price</P>
                 </div> -->
-
-
-
     </div>
     </main>
     <footer>
-
+        <h3 class="bg-dark text-warning text-center">made by sha</h3>
     </footer>
     </div>
     <script src="app/main.js" type="module"></script>

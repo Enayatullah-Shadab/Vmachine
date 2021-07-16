@@ -1,6 +1,9 @@
+import { VmachineService } from "../Services/VendingService.js";
+import { ProxyState } from "../AppState.js";
+import NotificationService from "../Services/NotificationService.js";
 
-function _drawSource() {
-    document.getElementById('source').innerHTML = ProxyState.source
+function _drawDollar() {
+    document.getElementById('dollar').innerHTML = ProxyState.dollar
 }
 function _draw() {
     let template = ''
@@ -10,7 +13,7 @@ function _draw() {
 
 export default class Vmachine {
     constructor() {
-        ProxyState.on('source', _drawSource)
+        ProxyState.on('dollar', _drawSource)
         ProxyState.on('snacks', _draw)
         _draw()
     }
