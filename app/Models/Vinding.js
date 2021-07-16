@@ -19,11 +19,11 @@ export default class Vmaching {
         return
         `<div class=" col text-center pr-5 mt-5 pt-5">
         <img class="img-fluid" src="./assets/img/Red b.jpg" width="180" height="300"
-            alt="what for picture to load">
-        <h5>${this.Name}: <span> 0 </span> </h5>
-        <h5> ${this.Price}: <span> 0 </span> </h5>
-        <h5>${this.Quantity}: <span> 0 </span> </h5>
-        <h5>${this.Total}: <span> 0 </span> </h5>
-    </div>`
+        alt="what for picture to load">
+        <h5>Name: <span id="name"> 0 </span> </h5>
+        <h5>Price: <span id="price"> 0 </span> </h5>
+        <h5>Quantity: <span id="qnt"> 0 </span> </h5>
+        <h5>Total: <span id="total"> 0 </span> </h5>
+        </div>`
     }
 }
